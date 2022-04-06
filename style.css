@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: rgb(29, 29, 29);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    box-shadow: 0 0 1px white;
+}
+
+#logo-blog,
+#nav-list {
+    margin: 10px;
+    font-weight: bold;
+}
+
+#logo-blog {
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+    margin-left: 50px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+#nav-list {
+    display: flex;
+    margin-left: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px 0;
+    line-height: 30px;
+    margin-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.welcome-section>p {
+    font-size: 1rem;
+    font-style: oblique;
+    margin-top: 5px;
+}
+
+#profile-vector {
+    position: absolute;
+    z-index: -1;
+    left: 60%;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.projects-section {
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 2rem 2rem 5rem 2rem;
+    color: white;
+}
+
+.projects-section-header {
+    max-width: 450px;
+    font-size: 1.8rem;
+    margin: 0 auto 4rem auto;
+    border-bottom: 0.5px solid white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.project-image {
+    display: block;
+    width: 400px;
+    height: 250px;
+    border-radius: 5px 5px 0 0;
+}
+
+.project-tile {
+    border-radius: 0 0 5px 5px;
+}
+
+.project-title {
+    background-color: white;
+    color: black;
+    border-radius: 0 0 5px 5px;
+    padding: 5px 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.btn-show-all {
+    font-size: 1rem;
+    font-weight: bold;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+.btn {
+    display: inline-block;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    padding: 0 2rem;
+}
+
+h2 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    color: white;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    margin-right: 20px;
+}
+
+.logo-image {
+    display: inline-block;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+    box-shadow: 0 0 2px 1px white;
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0 2rem 0;
+}
+
+@media (max-width: 700px) {
+
+    #logo-blog,
+    #nav-list {
+        margin: 10px;
+        font-weight: bold;
+        font-size: smaller;
+    }
+
+    li {
+        margin-right: 20px;
+    }
+
+    #nav-list {
+        justify-content: right;
+        align-items: flex-end;
+        margin-left: auto;
+    }
+
+    #logo-blog {
+        margin-right: 20px;
+        padding-left: 10px;
+    }
+
+    .welcome-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        height: 95vh;
+    }
+
+    #profile-vector {
+        position: static;
+
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 30px 0 5px 0;
+    }
+
+    .welcome-section>p {
+        text-align: center;
+        padding: 10px 50px;
+    }
+
+    .projects-section {
+        padding-bottom: 3.5rem;
+    }
+
+    .projects-section-header {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .projects-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .project-image {
+        width: 300px;
+        height: 200px;
+    }
+
+    .contact-links {
+        justify-content: space-around;
+    }
+
+    .contact-details {
+        margin-right: 0;
+    }
+
+    .logo-image {
+        width: 30px;
+    }
+}
